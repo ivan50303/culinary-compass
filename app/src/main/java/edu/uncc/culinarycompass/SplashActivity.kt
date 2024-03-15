@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
 
         val btnGetStarted = findViewById<Button>(R.id.btnGetStarted)
         btnGetStarted.setOnClickListener {
-            var intent = Intent(this@SplashActivity, HomeActivity::class.java)
+            var intent = Intent(this@SplashActivity, SignUpActivity::class.java)
             startActivity(intent)
             finish()
         }
