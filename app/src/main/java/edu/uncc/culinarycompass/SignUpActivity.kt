@@ -17,5 +17,12 @@ class SignUpActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        val backArrowBtn = findViewById<Button>(R.id.myArrowBtn)
+        backArrowBtn.setOnClickListener {
+            var intent = Intent(this@SignUpActivity, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
