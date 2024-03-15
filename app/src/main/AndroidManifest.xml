@@ -33,6 +33,8 @@
             android:screenOrientation="locked"/>
         <activity android:name=".SignUpActivity"
             android:screenOrientation="locked"/>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="locked"/>
     </application>
 
 </manifest>
