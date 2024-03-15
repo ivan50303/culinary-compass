@@ -5,19 +5,17 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class SplashActivity : AppCompatActivity() {
+class SignUpActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.activity_create_account)
 
-
-        val btnGetStarted = findViewById<Button>(R.id.btnGetStarted)
-        btnGetStarted.setOnClickListener {
-            var intent = Intent(this@SplashActivity, SignUpActivity::class.java)
+        val signUpBtn = findViewById<Button>(R.id.signupbtn)
+        signUpBtn.setOnClickListener {
+            var intent = Intent(this@SignUpActivity, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }
-
-
     }
 }
