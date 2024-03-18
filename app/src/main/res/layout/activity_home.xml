@@ -26,6 +26,26 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/_30ssp" />
 
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/carouselRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                tools:listitem="@layout/image_item"
+                app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
+
+            <LinearLayout
+                android:id="@+id/slideDots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:layout_gravity="center" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_main_category"
                 android:layout_width="match_parent"
