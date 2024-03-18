@@ -16,6 +16,9 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        supportActionBar?.hide()
+
         val rv_main_category = findViewById<RecyclerView>(R.id.rv_main_category)
         arrMainCategory.add(Recipes(1, "Beef"))
         arrMainCategory.add(Recipes(2, "Pizza"))

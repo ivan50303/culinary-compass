@@ -10,10 +10,11 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+        supportActionBar?.hide()
 
         val btnGetStarted = findViewById<Button>(R.id.btnGetStarted)
         btnGetStarted.setOnClickListener {
-            var intent = Intent(this@SplashActivity, SignUpActivity::class.java)
+            var intent = Intent(this@SplashActivity, SearchActivity::class.java)
             startActivity(intent)
             finish()
         }
