@@ -88,8 +88,6 @@ class HomeActivity : AppCompatActivity() {
         }
         viewpager2.registerOnPageChangeCallback(pageChangeListener)
 
-        //setUpCarouselRecyclerView()
-
         val rv_main_category = findViewById<RecyclerView>(R.id.rv_main_category)
         arrMainCategory.add(Recipes(1, "Beef"))
         arrMainCategory.add(Recipes(2, "Pizza"))
@@ -106,19 +104,5 @@ class HomeActivity : AppCompatActivity() {
         super.onDestroy()
         viewpager2.unregisterOnPageChangeCallback(pageChangeListener)
     }
-
-    /*private fun setUpCarouselRecyclerView(){
-        carouselRecyclerView = findViewById(R.id.carouselRecyclerView)
-        CarouselSnapHelper().attachToRecyclerView(carouselRecyclerView)
-        carouselRecyclerView.adapter = CarouselAdapter(images = getImages())
-    }
-
-    private fun getImages(): List<String> {
-        return listOf(
-            "https://a.uguu.se/VuTbYhCE.jpg",
-            "https://a.uguu.se/pftGWNfc.jpg",
-            "https://a.uguu.se/mwbGwrvc.jpg"
-        )
-    }*/
 
 }
