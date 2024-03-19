@@ -100,4 +100,7 @@ dependencies {
 
     //coroutines core
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1")
+
+    //Google flexbox
+    implementation ("com.google.android.flexbox:flexbox:3.0.0")
 }
