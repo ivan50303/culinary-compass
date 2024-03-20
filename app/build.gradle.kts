@@ -74,6 +74,13 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
+    //carousel view
+    //implementation ("io.coil-kt:coil:2.5.0")
+    implementation ("com.google.android.material:material:1.10.0")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+
+
+
     //circle image view
     implementation ("de.hdodenhof:circleimageview:3.1.0")
 
