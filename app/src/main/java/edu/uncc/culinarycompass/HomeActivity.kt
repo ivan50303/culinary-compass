@@ -33,6 +33,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+
         viewpager2 = findViewById<ViewPager2>(R.id.carouselRecyclerView)
 
 
@@ -87,6 +88,9 @@ class HomeActivity : AppCompatActivity() {
             }
         }
         viewpager2.registerOnPageChangeCallback(pageChangeListener)
+
+        supportActionBar?.hide()
+
 
         val rv_main_category = findViewById<RecyclerView>(R.id.rv_main_category)
         arrMainCategory.add(Recipes(1, "Beef"))

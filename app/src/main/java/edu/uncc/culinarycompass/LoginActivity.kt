@@ -2,21 +2,20 @@ package edu.uncc.culinarycompass
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-
-class SplashActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.activity_login)
 
         supportActionBar?.hide()
 
-        Handler().postDelayed({
-            val intent = Intent(this@SplashActivity, SearchActivity::class.java)
+        val signUpBtn = findViewById<Button>(R.id.signupbtn)
+        signUpBtn.setOnClickListener {
+            var intent = Intent(this@LoginActivity, SignUpActivity::class.java)
             startActivity(intent)
-        }, 2000)
+            finish()
+        }
     }
 }
