@@ -65,6 +65,7 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.cardview:cardview:1.0.0")
+    implementation ("com.google.android.material:material:1.11.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -99,4 +100,7 @@ dependencies {
 
     //coroutines core
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1")
+
+    //Google flexbox
+    implementation ("com.google.android.flexbox:flexbox:3.0.0")
 }

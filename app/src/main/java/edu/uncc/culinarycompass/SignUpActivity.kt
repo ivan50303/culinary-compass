@@ -11,6 +11,8 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_account)
 
+        supportActionBar?.hide()
+
         val signUpBtn = findViewById<Button>(R.id.signupbtn)
         signUpBtn.setOnClickListener {
             var intent = Intent(this@SignUpActivity, LoginActivity::class.java)

@@ -2,6 +2,8 @@ package edu.uncc.culinarycompass
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
@@ -10,14 +12,11 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+        supportActionBar?.hide()
 
-        val btnGetStarted = findViewById<Button>(R.id.btnGetStarted)
-        btnGetStarted.setOnClickListener {
-            var intent = Intent(this@SplashActivity, SignUpActivity::class.java)
+        Handler().postDelayed({
+            val intent = Intent(this@SplashActivity, SearchActivity::class.java)
             startActivity(intent)
-            finish()
-        }
-
-
+        }, 2000)
     }
 }

@@ -81,6 +81,4 @@
         android:background="@color/orange"
         android:text="Sign Up"
         android:textAllCaps="false"/>
-
-
 </RelativeLayout>
