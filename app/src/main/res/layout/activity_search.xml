@@ -23,14 +23,12 @@
             android:background="@drawable/search_view_bg"
             android:layout_marginRight="12dp"/>
 
-
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_filter_list_24"
                 android:background="@null"
                 android:layout_gravity="center"/>
-
     </LinearLayout>
 
     <GridLayout
@@ -42,8 +40,7 @@
         android:rowCount="2"
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="12dp"
-        android:useDefaultMargins="true"
-        >
+        android:useDefaultMargins="true">
 
         <androidx.cardview.widget.CardView
             android:layout_width="110dp"
@@ -218,8 +215,6 @@
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-
     </GridLayout>
 
     <TextView
@@ -321,14 +316,7 @@
             android:layout_height="wrap_content"
             android:text="myTag"
             android:textAllCaps="false"/>
-
     </com.google.android.flexbox.FlexboxLayout>
-
-
-
-
-
-
 </RelativeLayout>
 
 
