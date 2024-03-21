@@ -41,6 +41,8 @@
             android:screenOrientation="locked"/>
         <activity android:name=".RecipeActivity"
             android:screenOrientation="locked"/>
+        <activity android:name=".FavoritesActivity"
+            android:screenOrientation="locked"/>
     </application>
 
 </manifest>
