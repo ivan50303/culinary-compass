@@ -81,7 +81,8 @@
                 android:layout_height="wrap_content"
                 android:text="Ingredients"
                 android:textSize="@dimen/_22sdp"
-                android:layout_marginHorizontal="12dp"/>
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="12dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -281,7 +282,8 @@
                 android:layout_height="wrap_content"
                 android:text="Steps"
                 android:textSize="@dimen/_22sdp"
-                android:layout_marginHorizontal="12dp"/>
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="12dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
