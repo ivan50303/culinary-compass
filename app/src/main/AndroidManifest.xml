@@ -37,6 +37,8 @@
             android:screenOrientation="locked"/>
         <activity android:name=".SearchActivity"
             android:screenOrientation="locked"/>
+        <activity android:name=".SearchResultsActivity"
+            android:screenOrientation="locked"/>
     </application>
 
 </manifest>
