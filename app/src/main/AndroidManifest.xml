@@ -37,7 +37,11 @@
             android:screenOrientation="locked"/>
         <activity android:name=".SearchActivity"
             android:screenOrientation="locked"/>
-        <activity android:name=".SearchResultsActivity"
+        <activity android:name=".FavoritesActivity"
+            android:screenOrientation="locked"/>
+        <activity android:name=".ProfileActivity"
+            android:screenOrientation="locked"/>
+        <activity android:name=".EditProfileActivity"
             android:screenOrientation="locked"/>
     </application>
 
