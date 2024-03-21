@@ -1,5 +1,6 @@
 package edu.uncc.culinarycompass
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -8,7 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.carousel.CarouselSnapHelper
+import com.google.android.material.navigation.NavigationBarItemView
 import edu.uncc.culinarycompass.adapter.CarouselAdapter
 import edu.uncc.culinarycompass.adapter.MainCategoryAdapter
 import edu.uncc.culinarycompass.entities.Recipes
@@ -21,6 +24,8 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var viewpager2 : ViewPager2
     private lateinit var pageChangeListener: ViewPager2.OnPageChangeCallback
 
+
+
     private val params = LinearLayout.LayoutParams(
         LinearLayout.LayoutParams.WRAP_CONTENT,
         LinearLayout.LayoutParams.WRAP_CONTENT
@@ -32,6 +37,34 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+    //NavBar
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navBar)
+        bottomNavigationView.selectedItemId = R.id.home
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId){
+                R.id.home ->{
+                    startActivity(Intent(this, HomeActivity::class.java))
+                    true
+                }
+                R.id.search ->{
+                    startActivity(Intent(this, SearchActivity::class.java))
+                    true
+                }
+                R.id.favorites ->{
+                    startActivity(Intent(this, FavoritesActivity::class.java))
+                    true
+                }
+                else -> false
+            }
+        }
+
+    //Profile page -> clicking on the profile icon
+        val imageViewProfileIcon = findViewById<ImageView>(R.id.profileIcon)
+        imageViewProfileIcon.setOnClickListener{
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
+
 
 
         viewpager2 = findViewById<ViewPager2>(R.id.carouselRecyclerView)
