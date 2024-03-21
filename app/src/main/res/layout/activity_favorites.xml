@@ -8,7 +8,8 @@
         android:id="@+id/svSearchResults"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical">
+        android:scrollbars="vertical"
+        android:layout_above="@+id/navBarLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -428,4 +429,20 @@
         </GridLayout>
     </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        android:id="@+id/navBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            app:menu="@menu/bottom_nav"/> <!-- temp color -->
+
+
+    </LinearLayout>
 </RelativeLayout>

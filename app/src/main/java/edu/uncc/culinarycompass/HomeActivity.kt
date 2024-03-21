@@ -52,7 +52,7 @@ class HomeActivity : AppCompatActivity() {
                     true
                 }
                 R.id.favorites ->{
-                    startActivity(Intent(this, HomeActivity::class.java))
+                    startActivity(Intent(this, FavoritesActivity::class.java))
                     true
                 }
                 else -> false
@@ -62,7 +62,7 @@ class HomeActivity : AppCompatActivity() {
     //Profile page -> clicking on the profile icon
         val imageViewProfileIcon = findViewById<ImageView>(R.id.profileIcon)
         imageViewProfileIcon.setOnClickListener{
-            startActivity(Intent(this, SearchActivity::class.java))
+            startActivity(Intent(this, ProfileActivity::class.java))
         }
 
 

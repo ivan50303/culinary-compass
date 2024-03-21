@@ -23,7 +23,7 @@ class SearchActivity : AppCompatActivity() {
                     true
                 }
                 R.id.favorites ->{
-                    startActivity(Intent(this, HomeActivity::class.java))
+                    startActivity(Intent(this, FavoritesActivity::class.java))
                     true
                 }
                 else -> false
