@@ -45,23 +45,26 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_favorite" />
+                        android:src="@drawable/ic_clock"
+                        android:layout_marginRight="2dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="25min"
-                        android:layout_gravity="center_vertical" />
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/_10sdp"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_favorite" />
+                        android:src="@drawable/ic_people"
+                        android:layout_marginRight="2dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="25min"
+                        android:text="4 servings"
                         android:layout_gravity="center_vertical" />
                 </LinearLayout>
 
@@ -69,7 +72,8 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_favorite" />
+                    android:src="@drawable/ic_favorite"
+                    android:background="@null"/>
             </LinearLayout>
 
             <TextView
@@ -295,7 +299,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Heat olive oil in a medium pan over medium heat. Add garlic and stir until fragrant, 1 to 2 minutes. Add butter and stir constantly until melted. Pour in 3 cups chicken broth; add pepper and salt. Bring to a boil. "
+                    android:text="Heat olive oil in a medium pan over medium heat. Add garlic and stir until fragrant, 1 to 2 minutes. Add butter and stir constantly until melted. Pour in 3 cups chicken broth; add pepper and salt. Bring to a boil. " />
 
             </LinearLayout>
 
@@ -315,7 +319,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add spaghetti and cook, stirring occasionally, until tender yet firm to the bite, about 12 minutes. Add more chicken broth if pasta starts to stick to the pan. "
+                    android:text="Add spaghetti and cook, stirring occasionally, until tender yet firm to the bite, about 12 minutes. Add more chicken broth if pasta starts to stick to the pan. " />
 
             </LinearLayout>
 
@@ -335,7 +339,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Parmesan cheese, cream, and parsley and mix until thoroughly combined. Serve immediately. "
+                    android:text="Add Parmesan cheese, cream, and parsley and mix until thoroughly combined. Serve immediately. " />
 
             </LinearLayout>
         </LinearLayout>
