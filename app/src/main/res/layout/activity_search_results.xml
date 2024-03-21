@@ -4,6 +4,17 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <ScrollView
+        android:id="@+id/svSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
@@ -80,7 +91,7 @@
                     android:layout_height="match_parent"
                     android:text="Creamy Garlic Pasta"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:layout_weight="1"
                     android:layout_gravity="center_vertical" />
 
@@ -126,7 +137,7 @@
                     android:layout_height="match_parent"
                     android:text="Creamy Garlic Pasta"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:layout_weight="1"
                     android:layout_gravity="center_vertical" />
 
@@ -172,7 +183,7 @@
                     android:layout_height="match_parent"
                     android:text="Creamy Garlic Pasta"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:layout_weight="1"
                     android:layout_gravity="center_vertical" />
 
@@ -218,7 +229,7 @@
                     android:layout_height="match_parent"
                     android:text="Creamy Garlic Pasta"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:layout_weight="1"
                     android:layout_gravity="center_vertical" />
 
@@ -264,7 +275,7 @@
                     android:layout_height="match_parent"
                     android:text="Creamy Garlic Pasta"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:layout_weight="1"
                     android:layout_gravity="center_vertical" />
 
@@ -310,7 +321,7 @@
                     android:layout_height="match_parent"
                     android:text="Creamy Garlic Pasta"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:layout_weight="1"
                     android:layout_gravity="center_vertical" />
 
@@ -327,6 +338,9 @@
 
 
 </GridLayout>
+
+    </LinearLayout>
+    </ScrollView>
 
 
 </RelativeLayout>
