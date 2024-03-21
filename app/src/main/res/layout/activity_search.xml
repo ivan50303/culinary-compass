@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="@dimen/_30sdp"
         android:layout_marginHorizontal="12dp">
         
         <androidx.appcompat.widget.SearchView
@@ -317,6 +318,23 @@
             android:text="myTag"
             android:textAllCaps="false"/>
     </com.google.android.flexbox.FlexboxLayout>
+
+    <LinearLayout
+        android:id="@+id/navBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            app:menu="@menu/bottom_nav"/> <!-- temp color -->
+
+
+    </LinearLayout>
 </RelativeLayout>
 
 
